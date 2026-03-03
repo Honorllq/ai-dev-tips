@@ -1,0 +1,114 @@
+baseURL = "https://331211.xyz/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+title = "AI Dev Tips"
+theme = "PaperMod"
+paginate = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "AI Dev Tips"
+  description = "AI 工具教程 | 论文解读 | 效率提升"
+  keywords = ["AI", "Claude Code", "机器学习", "深度学习", "工具教程"]
+  author = "AI Dev Tips"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = true
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+
+  [params.homeInfoParams]
+    Title = "AI Dev Tips"
+    Content = "分享 AI 工具使用技巧、论文精读笔记、编程效率提升方法"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Honorllq"
+
+  [params.analytics.google]
+    SiteVerificationTag = ""
+
+  [params.assets]
+    favicon = "/favicon.ico"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+  [params.editPost]
+    URL = "https://github.com/Honorllq/ai-dev-tips/tree/main/content"
+    Text = "建议修改"
+    appendFilePath = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  identifier = "categories"
+  name = "分类"
+  url = "/categories/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 50
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+  [markup.goldmark.renderer]
+    unsafe = true

@@ -1,6 +1,6 @@
 ---
 title: "Claude Code 入门指南：10 个实用技巧提升编程效率"
-date: 2026-03-04
+date: 2026-03-01
 draft: false
 tags: ["Claude Code", "AI工具", "效率提升"]
 categories: ["AI工具教程"]

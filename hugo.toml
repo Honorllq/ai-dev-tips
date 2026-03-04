@@ -48,6 +48,7 @@ enableEmoji = true
 
   [params.analytics.google]
     SiteVerificationTag = ""
+    gtagId = "G-H4EMVWKQPK"
 
   [params.adsense]
     publisherId = "ca-pub-7756252871662822"

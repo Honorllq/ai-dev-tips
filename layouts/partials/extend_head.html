@@ -2,3 +2,48 @@
 {{- if and (site.Params.env | eq "production") (site.Params.adsense.publisherId) -}}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherId }}" crossorigin="anonymous"></script>
 {{- end -}}
+
+{{- /* Enhanced Schema.org: WebSite with SearchAction (homepage only) */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.Title }},
+  "url": {{ site.Home.Permalink }},
+  "description": {{ site.Params.description }},
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ site.Home.Permalink }}search/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{- end -}}
+
+{{- /* FAQ Schema for pages with faq param */ -}}
+{{- if .Params.faq -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{- range $i, $item := .Params.faq -}}
+    {{- if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $item.q }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $item.a }}
+      }
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end -}}

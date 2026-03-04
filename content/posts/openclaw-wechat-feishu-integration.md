@@ -4,6 +4,8 @@ date: 2026-03-07
 draft: false
 tags: ["OpenClaw", "飞书", "微信", "AI助手", "自动化"]
 categories: ["AI工具教程"]
+series: ["AI应用实战系列"]
+keywords: ["OpenClaw教程", "飞书机器人", "微信AI助手", "AI自动化", "飞书AI"]
 summary: "用 OpenClaw 连接飞书和微信，搭建一个 7×24 小时在线的 AI 私人助手。自动回复消息、总结文档、管理日程——全部本地部署，数据不出你的服务器。"
 ---
 
@@ -488,6 +490,15 @@ OpenClaw + 飞书/微信的组合让你拥有一个 7×24 小时在线的 AI 助
 - OpenClaw GitHub：[github.com/anthropics/openclaw](https://github.com/anthropics/openclaw)
 - 飞书开放平台：[open.feishu.cn](https://open.feishu.cn/)
 - 微信公众平台：[mp.weixin.qq.com](https://mp.weixin.qq.com/)
+
+---
+
+## 延伸阅读
+
+- [OpenClaw 本地部署完整教程](/posts/openclaw-local-deploy/) — 从零开始部署 OpenClaw
+- [Ollama 完全指南](/posts/ollama-local-llm-guide/) — 用 Ollama 作为 OpenClaw 的本地模型后端
+- [MCP 协议详解](/posts/mcp-protocol-guide/) — OpenClaw 使用的工具连接标准
+- [AI Agent 赚钱变现](/posts/ai-agent-monetization/) — 把 AI 助手做成服务来变现
 
 ---
 

@@ -4,7 +4,16 @@ date: 2026-02-28
 draft: false
 tags: ["MCP", "AI Agent", "Claude Code", "协议"]
 categories: ["AI工具教程"]
+series: ["AI编程工具系列"]
+keywords: ["MCP协议", "MCP教程", "Model Context Protocol", "MCP Server", "Claude Code MCP"]
 summary: "MCP（Model Context Protocol）是 Anthropic 推出的 AI 工具连接开放标准，被称为「AI 的 USB-C」。本文详解 MCP 的架构原理、配置方法、热门服务器，以及如何自己构建 MCP Server。"
+faq:
+  - q: "MCP 是什么？"
+    a: "MCP（Model Context Protocol）是 Anthropic 推出的开放标准，让 AI 模型能安全连接外部工具和数据源。类似 USB-C 统一了充电接口，MCP 统一了 AI 的工具连接方式。"
+  - q: "哪些工具支持 MCP？"
+    a: "Cursor、Claude Code、GitHub Copilot、Windsurf、VS Code 都已支持 MCP。OpenAI、Google、Microsoft 也已采纳。目前有 18,000+ 个注册 MCP Server。"
+  - q: "MCP Server 怎么开发？"
+    a: "用 Python 的 FastMCP 或 TypeScript SDK，几十行代码就能构建一个 MCP Server。详细教程见本文的'自己构建 MCP Server'章节。"
 ---
 
 2024 年 11 月，Anthropic 开源了一个协议，悄悄改变了整个 AI 行业的工具连接方式。到 2025 年底，OpenAI、Google、Microsoft 全部跟进采纳。这个协议就是 **MCP（Model Context Protocol）**。
@@ -277,6 +286,14 @@ MCP 正在成为 AI 工具连接的事实标准。作为开发者，你需要了
 - Python SDK：[github.com/modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)
 - Server 合集：[github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 - MCP 中文站：[mcpcn.com](https://mcpcn.com)
+
+---
+
+## 延伸阅读
+
+- [Cursor vs Claude Code vs Copilot vs Windsurf](/posts/cursor-vs-claude-code-vs-copilot-vs-windsurf/) — 四大支持 MCP 的 AI 编程工具对比
+- [AI Agent 赚钱变现：9 种已验证的方法](/posts/ai-agent-monetization/) — MCP Server 开发是其中一种变现方式
+- [程序员转型 AI：2026 年完整学习路径](/posts/programmer-ai-learning-path/) — MCP 是 AI 工程化的核心技能
 
 ---
 

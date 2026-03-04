@@ -4,7 +4,16 @@ date: 2026-02-27
 draft: false
 tags: ["Ollama", "大模型", "本地部署", "AI工具"]
 categories: ["AI工具教程"]
+series: ["开源模型系列"]
+keywords: ["Ollama教程", "Ollama安装", "本地跑大模型", "Ollama GPU", "Ollama Docker"]
 summary: "Ollama 让你在自己的电脑上运行 Llama、Qwen、DeepSeek、Gemma 等开源大模型，完全离线、完全免费、数据完全私密。本文手把手教你从安装到高级配置。"
+faq:
+  - q: "Ollama 需要什么配置？"
+    a: "最低 4GB 显存可以跑 gemma3:4b，8GB 显存可以跑 qwen3:8b，24GB 显存可以跑 deepseek-r1:32b。没有独显也能用 CPU 运行，只是速度会慢很多。"
+  - q: "Ollama 支持哪些模型？"
+    a: "支持上百个模型，包括 Llama、Qwen、DeepSeek、Gemma、Phi 等所有主流开源模型。完整列表见 ollama.com/library。"
+  - q: "Ollama 和 LM Studio 哪个好？"
+    a: "Ollama 适合开发者和需要 API 集成的场景（命令行 + REST API）；LM Studio 适合新手和只想图形界面聊天的用户。"
 ---
 
 想用大模型但不想把数据交给 OpenAI 或 Google？想在飞机上也能用 AI？想零成本使用 AI？
@@ -480,6 +489,14 @@ Web UI → Docker 一键部署
 - GitHub：[github.com/ollama/ollama](https://github.com/ollama/ollama)
 - 模型库：[ollama.com/library](https://ollama.com/library)
 - Open WebUI：[github.com/open-webui/open-webui](https://github.com/open-webui/open-webui)
+
+---
+
+## 延伸阅读
+
+- [DeepSeek 完全指南](/posts/deepseek-complete-guide/) — Ollama 上最值得跑的模型之一
+- [MCP 协议详解](/posts/mcp-protocol-guide/) — 用 MCP 让 AI 工具连接 Ollama
+- [OpenClaw + 飞书/微信：打造 AI 私人助手](/posts/openclaw-wechat-feishu-integration/) — 用 Ollama 作为后端搭建 AI 助手
 
 ---
 

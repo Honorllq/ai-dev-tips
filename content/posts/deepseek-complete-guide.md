@@ -4,7 +4,16 @@ date: 2026-02-26
 draft: false
 tags: ["DeepSeek", "大模型", "AI工具", "API"]
 categories: ["AI工具教程"]
+series: ["开源模型系列"]
+keywords: ["DeepSeek教程", "DeepSeek API", "DeepSeek本地部署", "DeepSeek R1", "DeepSeek vs GPT"]
 summary: "DeepSeek 以不到 600 万美元的训练成本震惊全球 AI 行业。本文全面介绍 DeepSeek 的模型家族、API 使用、本地部署、与 GPT/Claude 的对比，帮你快速上手这个性价比之王。"
+faq:
+  - q: "DeepSeek 免费吗？"
+    a: "DeepSeek 网页版（chat.deepseek.com）免费使用。API 按 token 收费，但价格只有 GPT-4o 的 5%，是目前最便宜的顶级 AI API。"
+  - q: "DeepSeek 可以本地运行吗？"
+    a: "可以。通过 Ollama 可以运行 DeepSeek R1 的蒸馏版本（1.5B-70B 参数），推荐 14B 版本（需要 12GB 显存）。"
+  - q: "DeepSeek 和 ChatGPT 哪个好？"
+    a: "在数学和编程方面 DeepSeek R1 与 GPT-4o 打平甚至超越，价格便宜 18 倍。但 DeepSeek 有内容审查限制，敏感话题建议用 ChatGPT 或 Claude。"
 ---
 
 2025 年 1 月 27 日，被称为"AI 行业的黑色星期一"。DeepSeek-R1 的发布直接导致英伟达单日市值蒸发 **5890 亿美元**，创下美国公司历史上最大单日市值跌幅。
@@ -300,6 +309,14 @@ DeepSeek 用事实证明了：**顶级 AI 不一定需要天价投入**。它的
 - API 文档：[api-docs.deepseek.com](https://api-docs.deepseek.com/)
 - GitHub：[github.com/deepseek-ai](https://github.com/deepseek-ai)
 - Ollama：[ollama.com/library/deepseek-r1](https://ollama.com/library/deepseek-r1)
+
+---
+
+## 延伸阅读
+
+- [Ollama 完全指南：在你自己的电脑上跑大模型](/posts/ollama-local-llm-guide/) — 本地运行 DeepSeek 的详细教程
+- [Cursor vs Claude Code vs Copilot vs Windsurf](/posts/cursor-vs-claude-code-vs-copilot-vs-windsurf/) — DeepSeek 可以搭配这些编程工具使用
+- [2026 年 10 个最值得用的 AI 工具](/posts/top-10-ai-tools-2026/) — DeepSeek 之外还有哪些值得用的工具
 
 ---
 

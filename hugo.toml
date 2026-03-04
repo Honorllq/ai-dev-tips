@@ -49,6 +49,10 @@ enableEmoji = true
   [params.analytics.google]
     SiteVerificationTag = ""
 
+  [params.adsense]
+    # Fill in your AdSense publisher ID after approval, e.g. "ca-pub-1234567890123456"
+    publisherId = ""
+
   [params.assets]
     favicon = "/favicon.ico"
 
@@ -103,6 +107,12 @@ enableEmoji = true
   name = "关于"
   url = "/about/"
   weight = 50
+
+[[menu.main]]
+  identifier = "privacy"
+  name = "隐私政策"
+  url = "/privacy-policy/"
+  weight = 60
 
 [markup]
   [markup.highlight]

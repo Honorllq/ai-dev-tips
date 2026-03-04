@@ -1,5 +1,4 @@
-{{- /* AdSense integration - replace ca-pub-XXXXXXX with your actual AdSense publisher ID */ -}}
-{{- if site.Params.env | eq "production" -}}
-<!-- Google AdSense -->
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+{{- /* Google AdSense */ -}}
+{{- if and (site.Params.env | eq "production") (site.Params.adsense.publisherId) -}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.publisherId }}" crossorigin="anonymous"></script>
 {{- end -}}

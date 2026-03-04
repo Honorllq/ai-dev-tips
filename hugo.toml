@@ -50,8 +50,7 @@ enableEmoji = true
     SiteVerificationTag = ""
 
   [params.adsense]
-    # Fill in your AdSense publisher ID after approval, e.g. "ca-pub-1234567890123456"
-    publisherId = ""
+    publisherId = "ca-pub-7756252871662822"
 
   [params.assets]
     favicon = "/favicon.ico"
